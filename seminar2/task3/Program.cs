@@ -5,8 +5,8 @@
 void num(int a, int b) 
     {
         
-        if (a%b==0) Console.Write("Первое число кратно второму");
-        else Console.Write($"Второе число не кратно первому {a%b}");
+        if (a%b==0) Console.Write("Первое число кратно второму"); // проверили есть ли при делении остаток
+        else Console.Write($"Второе число не кратно первому {a%b}"); // ввыели результат деления с выводом остатка
     }    
 Console.Write("Введите первое число ");
 int a = Convert.ToInt32(Console.ReadLine());
