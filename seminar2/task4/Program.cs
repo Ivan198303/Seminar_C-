@@ -4,6 +4,13 @@ void num(int a)
         if ((a%7==0)&(a%23==0))Console.WriteLine("Число кратно 7 и 23");// или можно такое условие if (a%7+a%23==0)
         else Console.WriteLine("Число не кратно 7 и 23");
     }    
+try 
+    {
 Console.Write("Введите число ");
 int a = Convert.ToInt32(Console.ReadLine());
 num(a);
+ }
+catch
+{
+    Console.Write("Введите число а не текст");
+}
