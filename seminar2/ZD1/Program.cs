@@ -9,10 +9,11 @@ Console.WriteLine($"Полученное число {x2}");
     {
         Console.Write("Введите трехзначное число ");
         int x = Convert.ToInt32(Console.ReadLine());
-        if (x>=1000)Console.Write("Введите число меньше 1000");
-        if (x<100)Console.Write("Введите число больше 100");
-        else num(x); 
+        if (x>=1000)Console.WriteLine("Введите число меньше 1000");
+        else if (x<100)Console.Write("Введите число больше 100");
+        else num(x);
     } 
+  
     catch
     {
         Console.Write("Введите число а не текст");
