@@ -4,7 +4,7 @@ void day(int x)
 {
 if (x==6)Console.WriteLine("Сегодня выходной день суббота");
 if (x==7)Console.WriteLine("Сегодня выходной день воскресенье");
-else if (x<=6&x>=1)Console.WriteLine("Сегодня рабочий день");
+else if (x<=5&x>=1)Console.WriteLine("Сегодня рабочий день");
 }
 
 try
