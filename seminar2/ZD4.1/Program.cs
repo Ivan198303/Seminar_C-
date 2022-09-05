@@ -19,7 +19,7 @@ void num(int x)
             int x2=b/x1;
             int x3=b%x1;
             int x4=x2/10;
-            Console.WriteLine ($"Число без 2 цифры слева{x4}{x3}");
+            Console.WriteLine ($"Число без 2 цифры слева {x4}{x3}");
         }
 try 
     {
