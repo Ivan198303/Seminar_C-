@@ -22,6 +22,6 @@ try
 }
 catch
 {
-    Console.WriteLine("Надо вводить именно целое число");
+    Console.WriteLine("Надо вводить число а не текст");
     
 }
