@@ -9,18 +9,19 @@ HomeTask();
 try
 {
     Console.Write("Введите целое число ");
-    int a = Convert.ToInt32(Console.ReadLine()); 
+    int a = Convert.ToInt32(Console.ReadLine());
     void cube(int a)
     {
-        for(int b=1; b<a; b++)
+        for(int b=1; b<=a; b++)
         {
             Console.Write($"{b*b*b},");
         }
     } 
-    cube(a);       
+    cube(a);
+    if (a<=0)Console.WriteLine("Надо вводить именно целое число");       
 }
 catch
 {
-    
     Console.WriteLine("Надо вводить именно целое число");
+    
 }
