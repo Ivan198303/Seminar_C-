@@ -9,14 +9,30 @@ int[] RndMassive(int N)
     }
     return array;
 }
-
-
-
+int[] maxIndex(int[] array)
+{
+    int[] arrayMax = new int[2];
+    int max = 0;
+    int indexMax = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] > max)
+        {
+            max = array[i];
+            indexMax = i;
+        }
+    }
+    arrayMax[0] = indexMax;
+    arrayMax[1] = max;
+    return arrayMax;
+}
 try
 {
     Console.WriteLine("Введите размер массива = ");
     int a = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine(string.Join(",", RndMassive(a)));
+    int[] RNDarray = RndMassive(a);
+    Console.WriteLine(string.Join(",", RNDarray));
+    Console.WriteLine(string.Join(",", maxIndex(RNDarray)));
 }
 catch
 {
