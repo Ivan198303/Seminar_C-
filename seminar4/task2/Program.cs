@@ -20,9 +20,9 @@ catch
     
 }
 // Решение через логарифм
-Console.WriteLine("Введите целое число ");
-int a = Convert.ToInt32(Console.ReadLine());
-double fromLog = 0;
-fromLog=Math.Floor(Math.Log10(a)+1);
-Console.WriteLine($"Количество цифр в через логарифм равен {fromLog}");
+// Console.WriteLine("Введите целое число ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// double fromLog = 0;
+// fromLog=Math.Floor(Math.Log10(a)+1);
+// Console.WriteLine($"Количество цифр в через логарифм равен {fromLog}");
 
