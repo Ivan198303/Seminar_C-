@@ -11,6 +11,8 @@ int[] FillArray(int size)
             }
         int[] array=FillArray(12);               // количество элементов в массиве
 Console.WriteLine(string.Join(",",(array)));
+
+
 // Создаем массив и кол-во элементов задаем с клавиатуры
 int[] RndMassive(int N)
 {
