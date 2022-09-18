@@ -11,10 +11,14 @@ int[] FillArray(int size)
     return mas;
 }
 int[] array = FillArray(8); // количество элементов в массиве
-int sum = 0;
+int Summa (int[] index)
+{
+    int sum = 0;
         for (int i = 1; i < array.Length; i=i+2) 
         {
             sum += array[i];
         }
+        return sum;
+}
 Console.WriteLine(string.Join(",", (array)));
-Console.WriteLine(sum);
+Console.WriteLine($"Сумма на нечетных позициях равна = {Summa(array)}");

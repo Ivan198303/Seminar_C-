@@ -10,12 +10,16 @@ int[] FillArray(int size)
                 }
             return mas;
             }
-int[] array=FillArray(4);               // количество элементов в массиве
-int sum = 0;
+int[] array=FillArray(10);               // количество элементов в массиве
+int amount (int[] index)
+{
+    int count=0;
     for (int i = 0; i < array.Length; i++)
         {   
         if (array[i] % 2 == 0)  // если число делится с остатком на 0, то оно четное
-        sum += array[i];
+        count=count+1;
         }
+        return(count);
+}
 Console.WriteLine(string.Join(",",(array)));
-Console.WriteLine(sum);
+Console.WriteLine($"Количество четных чисел равно = {amount(array)}");
