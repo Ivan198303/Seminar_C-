@@ -58,9 +58,7 @@ void PrintSingleArray(int[] mmm)
 
 }
 
-int[,] arr1 = FillMas(6, 6);
-PrintArray(arr1);
-PrintSingleArray(GetSingleArray(arr1));
+
 int[] SelectionSortMin(int[] array){
     for (int i = 0; i < array.Length - 1; i++){
         int minPos = i;
@@ -73,8 +71,7 @@ int[] SelectionSortMin(int[] array){
     }
     return array;
 }
-int[] singleArr = GetSingleArray(arr1);
-PrintSingleArray(SelectionSortMin(singleArr));
+
 
 int[,] SingleToArray(int[] m1, int n, int m){
             int[,] m2 = new int[n, m];
@@ -92,6 +89,12 @@ int[,] SingleToArray(int[] m1, int n, int m){
                 
     return m2;
 }
+int[,] arr1 = FillMas(6, 6);
+PrintArray(arr1);
+System.Console.WriteLine("");
+PrintSingleArray(GetSingleArray(arr1));
+int[] singleArr = GetSingleArray(arr1);
+PrintSingleArray(SelectionSortMin(singleArr));
 System.Console.WriteLine("");
 PrintArray(SingleToArray(singleArr, arr1.GetLength(0), arr1.GetLength(1)));
 
