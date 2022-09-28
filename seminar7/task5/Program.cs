@@ -35,7 +35,8 @@ void PrintArray(int[,] arr)
 }
 int[,] arr2 = FillMas(6, 4);
 
-int[] GetSingleArray(int[,] arr){
+int[] GetSingleArray(int[,] arr)
+{
             int[] m1 = new int[arr.GetLength(0) * arr.GetLength(1)];
             int z = 0;
             for (int i = 0; i < arr.GetLength(0); i++)
