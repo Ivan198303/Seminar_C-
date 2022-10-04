@@ -38,21 +38,40 @@ int[] SummaLine(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-           k[i]+=array[i,j];    
-        }  
+            k[i] += array[i, j];
+        }
     }
     return k;
 }
+int NumberString(int[] a)
+{
+    int min =a[0];
+    int Indmin = 0;
+    for (int i = 0; i < a.Length; i++)
+    {
+        if (a[i] < min)
+        {
+        min = a[i];
+        Indmin = i;
+        }
+    }
+    return Indmin;
+}
 try
 {
+    Console.WriteLine();
     System.Console.Write("Введите количество строк n = ");
     int n = Convert.ToInt32(Console.ReadLine());
     System.Console.Write("Введите количество столбцов m = ");
     int m = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine();
     int[,] newArray = FillMas(n, m);
     PrintArray(newArray);
     Console.WriteLine();
-    Console.WriteLine(string.Join("    " , (SelectionSortMax(newArray))));
+    Console.WriteLine(string.Join("    ", (SummaLine(newArray))));
+    Console.WriteLine();
+    Console.WriteLine($"Строка с минимальным значением № {NumberString((SummaLine(newArray)))}");
+    Console.WriteLine();
 }
 catch
 {
